@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.banner {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+.banner_row {
+  align-items: center;
+  height: 90vh;
+}
+
+.text_content h1 {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.text_content p {
+  font-size: 16px;
+  margin-bottom: 45px;
+  margin-top: 20px;
+
+}
+
+.text_content span {
+  display: block;
+  height: 1.3px;
+  background: #15a4fa;
+  width: 88%;
+  margin: auto;
+}
+
+.btn-primary {
+  background: transparent;
+  color: #fff;
+  border-color: #15a4fa;
+  transition: .6s all ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #15a4fa;
+}
+
+.icon_arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  font-size: 20px;
+  animation: updown 1s linear infinite alternate;
+}
+
+@keyframes updown {
+  0% {
+    bottom: 40px;
+  }
+
+  100% {
+    bottom: 70px;
+  }
+}
+
+.simple-text {
+
+  height: 280px;
+  line-height: center;
+}
+
+.simpletext_row {
+  height: 240px;
+  align-items: center;
+}
+
+.text_conteiner {}
+
+.text_conteiner h2 {
+  color: #2d3950;
+  margin-bottom: 20px;
+}
+
+.text_conteiner p {
+  color: #999999;
+}
+
+.feature_icon {
+  height: 60px;
+  width: 60px;
+  background:
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: #48baff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+  /* IE6-9 */
+  line-height: 60px;
+  margin: auto;
+}
+
+.feature_icon i {
+  font-size: 23px;
+  color: #fff;
+}
+
+.single-feature {
+  text-align: center;
+}
+
+.single-feature h5 {
+  margin-top: 10px;
+  font-size: 19px;
+  color: #2d3950;
+}
+
+.single-feature p {
+  color: #999999;
+  font-size: 15px;
+}
+
+.showcase_text h2 {
+  color: #2d3950;
+}
+
+.showcase_text p {
+  color: #999;
+}
+
+.single_picture {
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.single_picture::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  width: 0%;
+  background: #15a4fa;
+  opacity: 0;
+  transition: .6s all ease-in-out;
+}
+
+.single_picture:hover::before {
+  height: 100%;
+  width: 100%;
+  background: #15a4fa;
+  opacity: .5;
+}
+
+.icon_item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .6s all ease-in-out;
+}
+
+.icon_item i {
+
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px;
+
+}
+
+.single_picture:hover .icon_item {
+  opacity: 1;
+}
+
+
+.form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.btn_sent {
+
+  padding-left: 70px;
+
+}
+
+.btn_sent input {
+color: #fff;
+background: transparent;
+border: none;
+border: 1px solid #15a4fa;
+padding: 3px 30px;
+border-radius: 3px;
+transition: .4s all ease-in-out;
+}
+
+.btn_sent input:hover {
+  background: #15a4fa;
+}
+
+.email-area {
+  background-image: url(../images/email_back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  margin: 0px
+}
+
+.email-area::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #424c61;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+  z-index: -1;
+}
+
+
+.email_text p {
+  color: #999;
+}
+
+.social_icon {
+
+  align-items: center;
+}
+
+.social_icon ul {
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+.social_icon ul li a{
+
+display: inline-block;
+height: 30px;
+width: 30px;
+background: #15a4fa;
+border-radius: 3px;
+line-height: 30px;
+margin: 3px;
+text-align: center;
+color: #fff;
+}
+
+.social_icon ul li a:hover {
+  background: #13c2eec3;
+  transition: .4s all ease-in-out;
+}
+
+.py-1 {
+  align-items: center;
+}
